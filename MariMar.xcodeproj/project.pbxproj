@@ -9,21 +9,24 @@
 /* Begin PBXBuildFile section */
 		20679E6D27FAE805000AD17C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E6C27FAE805000AD17C /* AppDelegate.swift */; };
 		20679E6F27FAE805000AD17C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E6E27FAE805000AD17C /* SceneDelegate.swift */; };
-		20679E7127FAE805000AD17C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E7027FAE805000AD17C /* ViewController.swift */; };
-		20679E7427FAE805000AD17C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20679E7227FAE805000AD17C /* Main.storyboard */; };
+		20679E7127FAE805000AD17C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E7027FAE805000AD17C /* HomeViewController.swift */; };
+		20679E7427FAE805000AD17C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20679E7227FAE805000AD17C /* Home.storyboard */; };
 		20679E7627FAE806000AD17C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20679E7527FAE806000AD17C /* Assets.xcassets */; };
 		20679E7927FAE806000AD17C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20679E7727FAE806000AD17C /* LaunchScreen.storyboard */; };
+		20679E8727FAEB9A000AD17C /* ViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E8627FAEB9A000AD17C /* ViewContainer.swift */; };
+		20679E8A27FAEC69000AD17C /* PureLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 20679E8927FAEC69000AD17C /* PureLayout */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		20679E6927FAE805000AD17C /* MariMar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MariMar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20679E6C27FAE805000AD17C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20679E6E27FAE805000AD17C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		20679E7027FAE805000AD17C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		20679E7327FAE805000AD17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20679E7027FAE805000AD17C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		20679E7327FAE805000AD17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		20679E7527FAE806000AD17C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20679E7827FAE806000AD17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20679E7A27FAE806000AD17C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20679E8627FAEB9A000AD17C /* ViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20679E8A27FAEC69000AD17C /* PureLayout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +62,62 @@
 			children = (
 				20679E6C27FAE805000AD17C /* AppDelegate.swift */,
 				20679E6E27FAE805000AD17C /* SceneDelegate.swift */,
-				20679E7027FAE805000AD17C /* ViewController.swift */,
-				20679E7227FAE805000AD17C /* Main.storyboard */,
-				20679E7527FAE806000AD17C /* Assets.xcassets */,
+				20679E8127FAE976000AD17C /* UI */,
+				20679E8027FAE8FF000AD17C /* Resources */,
 				20679E7727FAE806000AD17C /* LaunchScreen.storyboard */,
-				20679E7A27FAE806000AD17C /* Info.plist */,
 			);
 			path = MariMar;
+			sourceTree = "<group>";
+		};
+		20679E8027FAE8FF000AD17C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				20679E7A27FAE806000AD17C /* Info.plist */,
+				20679E7527FAE806000AD17C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		20679E8127FAE976000AD17C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				20679E8227FAE9B1000AD17C /* Story */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		20679E8227FAE9B1000AD17C /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				20679E8427FAEB3D000AD17C /* Common */,
+				20679E8527FAEB7C000AD17C /* Abstract */,
+				20679E8327FAEA18000AD17C /* Home */,
+			);
+			path = Story;
+			sourceTree = "<group>";
+		};
+		20679E8327FAEA18000AD17C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				20679E7027FAE805000AD17C /* HomeViewController.swift */,
+				20679E7227FAE805000AD17C /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		20679E8427FAEB3D000AD17C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		20679E8527FAEB7C000AD17C /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				20679E8627FAEB9A000AD17C /* ViewContainer.swift */,
+			);
+			path = Abstract;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +136,9 @@
 			dependencies = (
 			);
 			name = MariMar;
+			packageProductDependencies = (
+				20679E8927FAEC69000AD17C /* PureLayout */,
+			);
 			productName = MariMar;
 			productReference = 20679E6927FAE805000AD17C /* MariMar.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +167,9 @@
 				Base,
 			);
 			mainGroup = 20679E6027FAE804000AD17C;
+			packageReferences = (
+				20679E8827FAEC69000AD17C /* XCRemoteSwiftPackageReference "PureLayout" */,
+			);
 			productRefGroup = 20679E6A27FAE805000AD17C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +186,7 @@
 			files = (
 				20679E7927FAE806000AD17C /* LaunchScreen.storyboard in Resources */,
 				20679E7627FAE806000AD17C /* Assets.xcassets in Resources */,
-				20679E7427FAE805000AD17C /* Main.storyboard in Resources */,
+				20679E7427FAE805000AD17C /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +197,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20679E7127FAE805000AD17C /* ViewController.swift in Sources */,
+				20679E8727FAEB9A000AD17C /* ViewContainer.swift in Sources */,
+				20679E7127FAE805000AD17C /* HomeViewController.swift in Sources */,
 				20679E6D27FAE805000AD17C /* AppDelegate.swift in Sources */,
 				20679E6F27FAE805000AD17C /* SceneDelegate.swift in Sources */,
 			);
@@ -147,12 +207,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		20679E7227FAE805000AD17C /* Main.storyboard */ = {
+		20679E7227FAE805000AD17C /* Home.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				20679E7327FAE805000AD17C /* Base */,
 			);
-			name = Main.storyboard;
+			name = Home.storyboard;
 			sourceTree = "<group>";
 		};
 		20679E7727FAE806000AD17C /* LaunchScreen.storyboard */ = {
@@ -288,10 +348,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MariMar/Info.plist;
+				INFOPLIST_FILE = MariMar/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Home;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,10 +375,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MariMar/Info.plist;
+				INFOPLIST_FILE = MariMar/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Home;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -356,6 +416,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		20679E8827FAEC69000AD17C /* XCRemoteSwiftPackageReference "PureLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PureLayout/PureLayout";
+			requirement = {
+				kind = exactVersion;
+				version = 3.1.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		20679E8927FAEC69000AD17C /* PureLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 20679E8827FAEC69000AD17C /* XCRemoteSwiftPackageReference "PureLayout" */;
+			productName = PureLayout;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 20679E6127FAE804000AD17C /* Project object */;
 }
