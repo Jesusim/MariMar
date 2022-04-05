@@ -16,6 +16,8 @@
 		20679E8727FAEB9A000AD17C /* ViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E8627FAEB9A000AD17C /* ViewContainer.swift */; };
 		20679E8A27FAEC69000AD17C /* PureLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 20679E8927FAEC69000AD17C /* PureLayout */; };
 		20679E8E27FAF319000AD17C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 20679E8D27FAF319000AD17C /* README.md */; };
+		20679E9327FAF6ED000AD17C /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E9227FAF6ED000AD17C /* PushButton.swift */; };
+		20F2EEC127FC68B0001FADB2 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2EEC027FC68B0001FADB2 /* CounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		20679E7A27FAE806000AD17C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20679E8627FAEB9A000AD17C /* ViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContainer.swift; sourceTree = "<group>"; };
 		20679E8D27FAF319000AD17C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		20679E9227FAF6ED000AD17C /* PushButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
+		20F2EEC027FC68B0001FADB2 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 		20679E8427FAEB3D000AD17C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				20679E9227FAF6ED000AD17C /* PushButton.swift */,
+				20F2EEC027FC68B0001FADB2 /* CounterView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -202,9 +208,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				20679E8727FAEB9A000AD17C /* ViewContainer.swift in Sources */,
+				20679E9327FAF6ED000AD17C /* PushButton.swift in Sources */,
 				20679E7127FAE805000AD17C /* HomeViewController.swift in Sources */,
 				20679E6D27FAE805000AD17C /* AppDelegate.swift in Sources */,
 				20679E6F27FAE805000AD17C /* SceneDelegate.swift in Sources */,
+				20F2EEC127FC68B0001FADB2 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,10 +360,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MariMar/Resources/Info.plist;
+				INFOPLIST_FILE = App/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Home;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -367,7 +376,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -379,10 +388,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MariMar/Resources/Info.plist;
+				INFOPLIST_FILE = App/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Home;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -394,7 +404,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
