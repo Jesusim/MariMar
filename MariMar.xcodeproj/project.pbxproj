@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2017584127FD88BD0087C491 /* PureLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 2017584027FD88BD0087C491 /* PureLayout */; };
-		2017586227FD9A9F0087C491 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017585F27FD9A9F0087C491 /* Strings.swift */; };
-		2017586327FD9A9F0087C491 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017586027FD9A9F0087C491 /* Assets.swift */; };
-		2017586427FD9A9F0087C491 /* Scenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017586127FD9A9F0087C491 /* Scenes.swift */; };
 		20679E6D27FAE805000AD17C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E6C27FAE805000AD17C /* AppDelegate.swift */; };
 		20679E6F27FAE805000AD17C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E6E27FAE805000AD17C /* SceneDelegate.swift */; };
 		20679E7127FAE805000AD17C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E7027FAE805000AD17C /* HomeViewController.swift */; };
@@ -37,9 +34,6 @@
 
 /* Begin PBXFileReference section */
 		13A1167D035229F8CD917800 /* Pods-MariMar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MariMar.release.xcconfig"; path = "Target Support Files/Pods-MariMar/Pods-MariMar.release.xcconfig"; sourceTree = "<group>"; };
-		2017585F27FD9A9F0087C491 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
-		2017586027FD9A9F0087C491 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
-		2017586127FD9A9F0087C491 /* Scenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scenes.swift; sourceTree = "<group>"; };
 		20679E6927FAE805000AD17C /* MariMar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MariMar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20679E6C27FAE805000AD17C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20679E6E27FAE805000AD17C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,12 +74,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2017585E27FD9A9F0087C491 /* Generated */ = {
+		2017586C27FD9E3C0087C491 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
-				2017585F27FD9A9F0087C491 /* Strings.swift */,
-				2017586027FD9A9F0087C491 /* Assets.swift */,
-				2017586127FD9A9F0087C491 /* Scenes.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -121,7 +112,7 @@
 				20F2EECF27FD524D001FADB2 /* BusinessLogic */,
 				20679E8127FAE976000AD17C /* UI */,
 				20679E8027FAE8FF000AD17C /* Resources */,
-				2017585E27FD9A9F0087C491 /* Generated */,
+				2017586C27FD9E3C0087C491 /* Generated */,
 				20679E7727FAE806000AD17C /* LaunchScreen.storyboard */,
 			);
 			path = App;
@@ -372,12 +363,9 @@
 			files = (
 				20679E8727FAEB9A000AD17C /* ViewContainer.swift in Sources */,
 				20F2EEE127FD555B001FADB2 /* MainCoordinator.swift in Sources */,
-				2017586427FD9A9F0087C491 /* Scenes.swift in Sources */,
-				2017586227FD9A9F0087C491 /* Strings.swift in Sources */,
 				20679E9327FAF6ED000AD17C /* PushButton.swift in Sources */,
 				20F2EEE427FD6DB7001FADB2 /* TabBarController.swift in Sources */,
 				20F2EECE27FD51CE001FADB2 /* HomeCoordinator.swift in Sources */,
-				2017586327FD9A9F0087C491 /* Assets.swift in Sources */,
 				20F2EEDF27FD5506001FADB2 /* AppAssembly.swift in Sources */,
 				20679E7127FAE805000AD17C /* HomeViewController.swift in Sources */,
 				20679E6D27FAE805000AD17C /* AppDelegate.swift in Sources */,
