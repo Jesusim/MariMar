@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2017584127FD88BD0087C491 /* PureLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 2017584027FD88BD0087C491 /* PureLayout */; };
+		2017586227FD9A9F0087C491 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017585F27FD9A9F0087C491 /* Strings.swift */; };
+		2017586327FD9A9F0087C491 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017586027FD9A9F0087C491 /* Assets.swift */; };
+		2017586427FD9A9F0087C491 /* Scenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017586127FD9A9F0087C491 /* Scenes.swift */; };
 		20679E6D27FAE805000AD17C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E6C27FAE805000AD17C /* AppDelegate.swift */; };
 		20679E6F27FAE805000AD17C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E6E27FAE805000AD17C /* SceneDelegate.swift */; };
 		20679E7127FAE805000AD17C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E7027FAE805000AD17C /* HomeViewController.swift */; };
@@ -14,13 +18,28 @@
 		20679E7627FAE806000AD17C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20679E7527FAE806000AD17C /* Assets.xcassets */; };
 		20679E7927FAE806000AD17C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20679E7727FAE806000AD17C /* LaunchScreen.storyboard */; };
 		20679E8727FAEB9A000AD17C /* ViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E8627FAEB9A000AD17C /* ViewContainer.swift */; };
-		20679E8A27FAEC69000AD17C /* PureLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 20679E8927FAEC69000AD17C /* PureLayout */; };
 		20679E8E27FAF319000AD17C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 20679E8D27FAF319000AD17C /* README.md */; };
 		20679E9327FAF6ED000AD17C /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E9227FAF6ED000AD17C /* PushButton.swift */; };
 		20F2EEC127FC68B0001FADB2 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2EEC027FC68B0001FADB2 /* CounterView.swift */; };
+		20F2EEC827FD4FAD001FADB2 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2EEC727FD4FAD001FADB2 /* Coordinator.swift */; };
+		20F2EECA27FD50D2001FADB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2EEC927FD50D2001FADB2 /* ViewController.swift */; };
+		20F2EECC27FD5139001FADB2 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2EECB27FD5139001FADB2 /* AppCoordinator.swift */; };
+		20F2EECE27FD51CE001FADB2 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2EECD27FD51CE001FADB2 /* HomeCoordinator.swift */; };
+		20F2EED327FD528B001FADB2 /* SwinjectConfigurating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2EED227FD528B001FADB2 /* SwinjectConfigurating.swift */; };
+		20F2EED527FD52A9001FADB2 /* AutoAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2EED427FD52A9001FADB2 /* AutoAssembly.swift */; };
+		20F2EEDF27FD5506001FADB2 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2EEDE27FD5506001FADB2 /* AppAssembly.swift */; };
+		20F2EEE127FD555B001FADB2 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2EEE027FD555B001FADB2 /* MainCoordinator.swift */; };
+		20F2EEE427FD6DB7001FADB2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2EEE327FD6DB7001FADB2 /* TabBarController.swift */; };
+		20F2EEEE27FD7119001FADB2 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 20F2EEED27FD7119001FADB2 /* swiftgen.yml */; };
+		20F2EEF027FD715D001FADB2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20F2EEEF27FD715D001FADB2 /* Localizable.strings */; };
+		90A61BB19C9BEC68004B1CD9 /* Pods_MariMar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EA498A80DE14693C899872D /* Pods_MariMar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13A1167D035229F8CD917800 /* Pods-MariMar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MariMar.release.xcconfig"; path = "Target Support Files/Pods-MariMar/Pods-MariMar.release.xcconfig"; sourceTree = "<group>"; };
+		2017585F27FD9A9F0087C491 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		2017586027FD9A9F0087C491 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		2017586127FD9A9F0087C491 /* Scenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scenes.swift; sourceTree = "<group>"; };
 		20679E6927FAE805000AD17C /* MariMar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MariMar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20679E6C27FAE805000AD17C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20679E6E27FAE805000AD17C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +52,19 @@
 		20679E8D27FAF319000AD17C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		20679E9227FAF6ED000AD17C /* PushButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
 		20F2EEC027FC68B0001FADB2 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		20F2EEC727FD4FAD001FADB2 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		20F2EEC927FD50D2001FADB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		20F2EECB27FD5139001FADB2 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		20F2EECD27FD51CE001FADB2 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		20F2EED227FD528B001FADB2 /* SwinjectConfigurating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectConfigurating.swift; sourceTree = "<group>"; };
+		20F2EED427FD52A9001FADB2 /* AutoAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoAssembly.swift; sourceTree = "<group>"; };
+		20F2EEDE27FD5506001FADB2 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
+		20F2EEE027FD555B001FADB2 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		20F2EEE327FD6DB7001FADB2 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		20F2EEED27FD7119001FADB2 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		20F2EEEF27FD715D001FADB2 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		2EA498A80DE14693C899872D /* Pods_MariMar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MariMar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E816FF7ED182089D5EBAC9CE /* Pods-MariMar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MariMar.debug.xcconfig"; path = "Target Support Files/Pods-MariMar/Pods-MariMar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,19 +72,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20679E8A27FAEC69000AD17C /* PureLayout in Frameworks */,
+				2017584127FD88BD0087C491 /* PureLayout in Frameworks */,
+				90A61BB19C9BEC68004B1CD9 /* Pods_MariMar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2017585E27FD9A9F0087C491 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				2017585F27FD9A9F0087C491 /* Strings.swift */,
+				2017586027FD9A9F0087C491 /* Assets.swift */,
+				2017586127FD9A9F0087C491 /* Scenes.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 		20679E6027FAE804000AD17C = {
 			isa = PBXGroup;
 			children = (
 				20679E8D27FAF319000AD17C /* README.md */,
+				20F2EEED27FD7119001FADB2 /* swiftgen.yml */,
 				20679E6B27FAE805000AD17C /* App */,
 				20679E6A27FAE805000AD17C /* Products */,
+				5760F130A5798CB70AAE7BBE /* Pods */,
+				6EB5CE49681C8408DBCF5D7A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,10 +113,15 @@
 		20679E6B27FAE805000AD17C /* App */ = {
 			isa = PBXGroup;
 			children = (
+				20F2EEDE27FD5506001FADB2 /* AppAssembly.swift */,
 				20679E6C27FAE805000AD17C /* AppDelegate.swift */,
 				20679E6E27FAE805000AD17C /* SceneDelegate.swift */,
+				20F2EECB27FD5139001FADB2 /* AppCoordinator.swift */,
+				20F2EEE027FD555B001FADB2 /* MainCoordinator.swift */,
+				20F2EECF27FD524D001FADB2 /* BusinessLogic */,
 				20679E8127FAE976000AD17C /* UI */,
 				20679E8027FAE8FF000AD17C /* Resources */,
+				2017585E27FD9A9F0087C491 /* Generated */,
 				20679E7727FAE806000AD17C /* LaunchScreen.storyboard */,
 			);
 			path = App;
@@ -81,6 +132,7 @@
 			children = (
 				20679E7A27FAE806000AD17C /* Info.plist */,
 				20679E7527FAE806000AD17C /* Assets.xcassets */,
+				20F2EEEF27FD715D001FADB2 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -106,6 +158,7 @@
 		20679E8327FAEA18000AD17C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				20F2EECD27FD51CE001FADB2 /* HomeCoordinator.swift */,
 				20679E7027FAE805000AD17C /* HomeViewController.swift */,
 				20679E7227FAE805000AD17C /* Home.storyboard */,
 			);
@@ -124,9 +177,54 @@
 		20679E8527FAEB7C000AD17C /* Abstract */ = {
 			isa = PBXGroup;
 			children = (
+				20F2EEC727FD4FAD001FADB2 /* Coordinator.swift */,
 				20679E8627FAEB9A000AD17C /* ViewContainer.swift */,
+				20F2EEC927FD50D2001FADB2 /* ViewController.swift */,
+				20F2EEE327FD6DB7001FADB2 /* TabBarController.swift */,
 			);
 			path = Abstract;
+			sourceTree = "<group>";
+		};
+		20F2EECF27FD524D001FADB2 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				20F2EED027FD526A001FADB2 /* Assembly */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		20F2EED027FD526A001FADB2 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				20F2EED127FD5277001FADB2 /* Swinject */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		20F2EED127FD5277001FADB2 /* Swinject */ = {
+			isa = PBXGroup;
+			children = (
+				20F2EED427FD52A9001FADB2 /* AutoAssembly.swift */,
+				20F2EED227FD528B001FADB2 /* SwinjectConfigurating.swift */,
+			);
+			path = Swinject;
+			sourceTree = "<group>";
+		};
+		5760F130A5798CB70AAE7BBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E816FF7ED182089D5EBAC9CE /* Pods-MariMar.debug.xcconfig */,
+				13A1167D035229F8CD917800 /* Pods-MariMar.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6EB5CE49681C8408DBCF5D7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EA498A80DE14693C899872D /* Pods_MariMar.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20679E7D27FAE806000AD17C /* Build configuration list for PBXNativeTarget "MariMar" */;
 			buildPhases = (
+				5D70819A0B7F58AFAC2CAB60 /* [CP] Check Pods Manifest.lock */,
 				20679E6527FAE805000AD17C /* Sources */,
 				20679E6627FAE805000AD17C /* Frameworks */,
 				20679E6727FAE805000AD17C /* Resources */,
+				B9F48AB438D786662F1688F5 /* [CP] Embed Pods Frameworks */,
+				2017585A27FD98B30087C491 /* SwiftGen */,
 			);
 			buildRules = (
 			);
@@ -146,7 +247,7 @@
 			);
 			name = MariMar;
 			packageProductDependencies = (
-				20679E8927FAEC69000AD17C /* PureLayout */,
+				2017584027FD88BD0087C491 /* PureLayout */,
 			);
 			productName = MariMar;
 			productReference = 20679E6927FAE805000AD17C /* MariMar.app */;
@@ -177,7 +278,7 @@
 			);
 			mainGroup = 20679E6027FAE804000AD17C;
 			packageReferences = (
-				20679E8827FAEC69000AD17C /* XCRemoteSwiftPackageReference "PureLayout" */,
+				2017583F27FD88BD0087C491 /* XCRemoteSwiftPackageReference "PureLayout" */,
 			);
 			productRefGroup = 20679E6A27FAE805000AD17C /* Products */;
 			projectDirPath = "";
@@ -194,6 +295,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				20679E7927FAE806000AD17C /* LaunchScreen.storyboard in Resources */,
+				20F2EEF027FD715D001FADB2 /* Localizable.strings in Resources */,
+				20F2EEEE27FD7119001FADB2 /* swiftgen.yml in Resources */,
 				20679E7627FAE806000AD17C /* Assets.xcassets in Resources */,
 				20679E8E27FAF319000AD17C /* README.md in Resources */,
 				20679E7427FAE805000AD17C /* Home.storyboard in Resources */,
@@ -202,17 +305,89 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2017585A27FD98B30087C491 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n./Pods/SwiftGen/bin/swiftgen\n";
+		};
+		5D70819A0B7F58AFAC2CAB60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MariMar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9F48AB438D786662F1688F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MariMar/Pods-MariMar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MariMar/Pods-MariMar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MariMar/Pods-MariMar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		20679E6527FAE805000AD17C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				20679E8727FAEB9A000AD17C /* ViewContainer.swift in Sources */,
+				20F2EEE127FD555B001FADB2 /* MainCoordinator.swift in Sources */,
+				2017586427FD9A9F0087C491 /* Scenes.swift in Sources */,
+				2017586227FD9A9F0087C491 /* Strings.swift in Sources */,
 				20679E9327FAF6ED000AD17C /* PushButton.swift in Sources */,
+				20F2EEE427FD6DB7001FADB2 /* TabBarController.swift in Sources */,
+				20F2EECE27FD51CE001FADB2 /* HomeCoordinator.swift in Sources */,
+				2017586327FD9A9F0087C491 /* Assets.swift in Sources */,
+				20F2EEDF27FD5506001FADB2 /* AppAssembly.swift in Sources */,
 				20679E7127FAE805000AD17C /* HomeViewController.swift in Sources */,
 				20679E6D27FAE805000AD17C /* AppDelegate.swift in Sources */,
 				20679E6F27FAE805000AD17C /* SceneDelegate.swift in Sources */,
 				20F2EEC127FC68B0001FADB2 /* CounterView.swift in Sources */,
+				20F2EECC27FD5139001FADB2 /* AppCoordinator.swift in Sources */,
+				20F2EECA27FD50D2001FADB2 /* ViewController.swift in Sources */,
+				20F2EEC827FD4FAD001FADB2 /* Coordinator.swift in Sources */,
+				20F2EED527FD52A9001FADB2 /* AutoAssembly.swift in Sources */,
+				20F2EED327FD528B001FADB2 /* SwinjectConfigurating.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +463,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -342,7 +517,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -354,11 +529,14 @@
 		};
 		20679E7E27FAE806000AD17C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E816FF7ED182089D5EBAC9CE /* Pods-MariMar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = App/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -367,6 +545,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,6 +553,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.badteam.MariMar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -382,11 +562,14 @@
 		};
 		20679E7F27FAE806000AD17C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13A1167D035229F8CD917800 /* Pods-MariMar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = App/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -395,6 +578,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -402,6 +586,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.badteam.MariMar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -432,20 +617,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		20679E8827FAEC69000AD17C /* XCRemoteSwiftPackageReference "PureLayout" */ = {
+		2017583F27FD88BD0087C491 /* XCRemoteSwiftPackageReference "PureLayout" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/PureLayout/PureLayout";
 			requirement = {
-				kind = exactVersion;
-				version = 3.1.9;
+				kind = upToNextMinorVersion;
+				minimumVersion = 3.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		20679E8927FAEC69000AD17C /* PureLayout */ = {
+		2017584027FD88BD0087C491 /* PureLayout */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 20679E8827FAEC69000AD17C /* XCRemoteSwiftPackageReference "PureLayout" */;
+			package = 2017583F27FD88BD0087C491 /* XCRemoteSwiftPackageReference "PureLayout" */;
 			productName = PureLayout;
 		};
 /* End XCSwiftPackageProductDependency section */

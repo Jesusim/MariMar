@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class HomeViewController: UIViewController {
+final class HomeViewController: ViewController {
     
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var counterView: CounterView!
@@ -27,5 +27,4 @@ final class HomeViewController: UIViewController {
         numberLabel.text = "\(counterView.counter)"
     }
     
-
 }

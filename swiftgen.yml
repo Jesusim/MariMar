@@ -1,0 +1,17 @@
+strings:
+    inputs: App/Resources/Localizable.strings
+    outputs:
+        templateName: structured-swift5
+        output: App/Generated/Strings.swift
+
+xcassets:
+    inputs: App/Resources/Assets.xcassets
+    outputs:
+        templateName: swift5
+        output: App/Generated/Assets.swift
+
+ib:
+  inputs: App/
+  outputs:
+    - templateName: scenes-swift5
+      output: App/Generated/Scenes.swift
