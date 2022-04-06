@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,17 +13,102 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="MariMar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkS-fv-qM7" customClass="PushButton" customModule="MariMar" customModuleProvider="target">
+                                <rect key="frame" x="147.5" y="493" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="0oG-2Q-WhU"/>
+                                    <constraint firstAttribute="height" constant="80" id="93M-UO-7an"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.027450980390000001" green="0.41568627450000001" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="plusTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AUS-S4-OEc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHF-M2-rOa" customClass="PushButton" customModule="MariMar" customModuleProvider="target">
+                                <rect key="frame" x="167.5" y="613" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3c4-aP-BfG"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="xh9-be-gum"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="minusTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="POp-wS-BHq"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B9G-Ns-cLa" customClass="CounterView" customModule="MariMar" customModuleProvider="target">
+                                <rect key="frame" x="40" y="100" width="295" height="293"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5O-55-BlZ">
+                                        <rect key="frame" x="136" y="116.5" width="23" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="S5O-55-BlZ" firstAttribute="centerX" secondItem="B9G-Ns-cLa" secondAttribute="centerX" id="1rU-Th-dX2"/>
+                                    <constraint firstItem="S5O-55-BlZ" firstAttribute="centerY" secondItem="B9G-Ns-cLa" secondAttribute="centerY" id="Haw-KC-yzW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxCounter">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="counter">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="B9G-Ns-cLa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="DRj-Ap-921"/>
+                            <constraint firstItem="XkS-fv-qM7" firstAttribute="top" secondItem="B9G-Ns-cLa" secondAttribute="bottom" constant="100" id="HvL-ID-IDR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OHF-M2-rOa" secondAttribute="bottom" constant="14" id="JVt-ku-EuJ"/>
+                            <constraint firstItem="OHF-M2-rOa" firstAttribute="centerX" secondItem="XkS-fv-qM7" secondAttribute="centerX" id="Leb-eq-t7C"/>
+                            <constraint firstItem="OHF-M2-rOa" firstAttribute="top" secondItem="XkS-fv-qM7" secondAttribute="bottom" constant="40" id="Oqi-gg-3CM"/>
+                            <constraint firstItem="B9G-Ns-cLa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="VMZ-1u-MNB"/>
+                            <constraint firstItem="XkS-fv-qM7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XP9-u4-eU5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B9G-Ns-cLa" secondAttribute="trailing" constant="40" id="amg-K6-Mmo"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="counterView" destination="B9G-Ns-cLa" id="Z5o-Ss-HBt"/>
+                        <outlet property="numberLabel" destination="S5O-55-BlZ" id="IfS-hn-shj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="82"/>
+            <point key="canvasLocation" x="18.75" y="81.338028169014081"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="OHF-M2-rOa">
+            <size key="intrinsicContentSize" width="24" height="14"/>
+        </designable>
+        <designable name="XkS-fv-qM7">
+            <size key="intrinsicContentSize" width="24" height="14"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

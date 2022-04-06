@@ -7,11 +7,24 @@
 
 import UIKit
 
-final class HomeViewController: UIViewController {
-
+final class HomeViewController: ViewController {
+    
+    @IBOutlet weak var numberLabel: UILabel!
+    @IBOutlet weak var counterView: CounterView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    @IBAction func plusTap(_ sender: UIButton) {
+        counterView.counter += 1
+        numberLabel.text = "\(counterView.counter)"
+    }
+    
+    @IBAction func minusTap(_ sender: UIButton) {
+        counterView.counter -= 1
+        numberLabel.text = "\(counterView.counter)"
+    }
+    
 }
