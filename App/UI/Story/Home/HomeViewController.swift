@@ -19,13 +19,11 @@ final class HomeViewController: UIViewController {
     
     @IBAction func plusTap(_ sender: UIButton) {
         counterView.counter += 1
-        counterView.setNeedsDisplay()
         numberLabel.text = "\(counterView.counter)"
     }
     
     @IBAction func minusTap(_ sender: UIButton) {
         counterView.counter -= 1
-        counterView.setNeedsDisplay()
         numberLabel.text = "\(counterView.counter)"
     }
     

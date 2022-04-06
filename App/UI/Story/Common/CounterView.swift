@@ -15,6 +15,7 @@ final class CounterView: UIView {
             /// Set the limit of the shape by 0 and maxCounter
             counter = counter < 0 ? 0 : counter
             counter = counter > maxCounter ? maxCounter : counter
+            setNeedsDisplay()
         }
     }
     @IBInspectable var maxCounter: Int = 8
