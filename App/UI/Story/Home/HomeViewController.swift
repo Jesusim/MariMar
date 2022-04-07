@@ -7,10 +7,16 @@
 
 import UIKit
 
-final class HomeViewController: ViewController {
+protocol HomeViewInput {
+    
+}
+
+final class HomeViewController: ViewController, HomeViewInput {
     
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var counterView: CounterView!
+    
+    var viewOutput: HomeViewOutput!
     
     override func viewDidLoad() {
         super.viewDidLoad()

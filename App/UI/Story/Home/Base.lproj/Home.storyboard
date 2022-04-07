@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -17,13 +18,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkS-fv-qM7" customClass="PushButton" customModule="MariMar" customModuleProvider="target">
-                                <rect key="frame" x="147.5" y="493" width="80" height="80"/>
+                                <rect key="frame" x="147.5" y="363" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="0oG-2Q-WhU"/>
                                     <constraint firstAttribute="height" constant="80" id="93M-UO-7an"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
                                         <color key="value" red="0.027450980390000001" green="0.41568627450000001" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -35,13 +35,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHF-M2-rOa" customClass="PushButton" customModule="MariMar" customModuleProvider="target">
-                                <rect key="frame" x="167.5" y="613" width="40" height="40"/>
+                                <rect key="frame" x="167.5" y="483" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="3c4-aP-BfG"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="xh9-be-gum"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -53,7 +52,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B9G-Ns-cLa" customClass="CounterView" customModule="MariMar" customModuleProvider="target">
-                                <rect key="frame" x="40" y="100" width="295" height="293"/>
+                                <rect key="frame" x="40" y="30" width="295" height="293"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5O-55-BlZ">
                                         <rect key="frame" x="136" y="116.5" width="23" height="60"/>
@@ -66,7 +65,9 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="S5O-55-BlZ" firstAttribute="centerX" secondItem="B9G-Ns-cLa" secondAttribute="centerX" id="1rU-Th-dX2"/>
+                                    <constraint firstAttribute="width" constant="295" id="6Ii-2q-v5g"/>
                                     <constraint firstItem="S5O-55-BlZ" firstAttribute="centerY" secondItem="B9G-Ns-cLa" secondAttribute="centerY" id="Haw-KC-yzW"/>
+                                    <constraint firstAttribute="height" constant="293" id="ivj-nJ-opH"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="maxCounter">
@@ -81,9 +82,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="B9G-Ns-cLa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="DRj-Ap-921"/>
-                            <constraint firstItem="XkS-fv-qM7" firstAttribute="top" secondItem="B9G-Ns-cLa" secondAttribute="bottom" constant="100" id="HvL-ID-IDR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OHF-M2-rOa" secondAttribute="bottom" constant="14" id="JVt-ku-EuJ"/>
+                            <constraint firstItem="B9G-Ns-cLa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="DRj-Ap-921"/>
+                            <constraint firstItem="XkS-fv-qM7" firstAttribute="top" secondItem="B9G-Ns-cLa" secondAttribute="bottom" constant="40" id="HvL-ID-IDR"/>
                             <constraint firstItem="OHF-M2-rOa" firstAttribute="centerX" secondItem="XkS-fv-qM7" secondAttribute="centerX" id="Leb-eq-t7C"/>
                             <constraint firstItem="OHF-M2-rOa" firstAttribute="top" secondItem="XkS-fv-qM7" secondAttribute="bottom" constant="40" id="Oqi-gg-3CM"/>
                             <constraint firstItem="B9G-Ns-cLa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="VMZ-1u-MNB"/>
@@ -103,10 +103,10 @@
     </scenes>
     <designables>
         <designable name="OHF-M2-rOa">
-            <size key="intrinsicContentSize" width="24" height="14"/>
+            <size key="intrinsicContentSize" width="30" height="30"/>
         </designable>
         <designable name="XkS-fv-qM7">
-            <size key="intrinsicContentSize" width="24" height="14"/>
+            <size key="intrinsicContentSize" width="30" height="30"/>
         </designable>
     </designables>
     <resources>

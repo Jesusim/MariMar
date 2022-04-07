@@ -83,16 +83,16 @@ final class MainCoordinator: NavigationCoordinator<UITabBarController>, MainCoor
 
     private func homeTab() -> UINavigationController {
         let homeNavigationVC = UINavigationController()
-//        homeNavigationVC.tabBarItem = UITabBarItem(
-//            title: L10n.Tab.home,
-//            image: Asset.homeTabBarIconDim.image,
-//            selectedImage: Asset.homeTabBarIcon.image
-//        )
-//        let homeCoordinator = resolver.resolve(
-//            HomeCoordinating.self,
-//            arguments: homeNavigationVC, self as MainCoordinating
-//        )!
-//        openChild(homeCoordinator)
+        homeNavigationVC.tabBarItem = UITabBarItem(
+            title: L10n.Tab.home,
+            image: Asset.home.image,
+            selectedImage: Asset.home.image
+        )
+        let homeCoordinator = resolver.resolve(
+            HomeCoordinating.self,
+            arguments: homeNavigationVC, self as MainCoordinating
+        )!
+        openChild(homeCoordinator)
         return homeNavigationVC
     }
 }
@@ -100,14 +100,6 @@ final class MainCoordinator: NavigationCoordinator<UITabBarController>, MainCoor
 extension MainCoordinator: TabBarEventsDelegate {
     
     func tabBar(didSelect viewController: UIViewController) {
-        let tabLabel: String?
-        
-        switch viewController.children.first {
-        case is HomeViewController:
-            tabLabel = "fs"//L10n.Tab.home
-        default:
-            tabLabel = nil
-        }
     }
     
 }

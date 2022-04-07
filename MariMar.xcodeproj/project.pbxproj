@@ -11,6 +11,9 @@
 		2017587627FD9F420087C491 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017587327FD9F420087C491 /* Strings.swift */; };
 		2017587727FD9F420087C491 /* Scenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017587427FD9F420087C491 /* Scenes.swift */; };
 		2017587827FD9F420087C491 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017587527FD9F420087C491 /* Assets.swift */; };
+		2017587B27FEA28D0087C491 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017587A27FEA28D0087C491 /* UIColor.swift */; };
+		2017587D27FEA4F00087C491 /* HomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017587C27FEA4F00087C491 /* HomeAssembly.swift */; };
+		2017587F27FEA5B00087C491 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017587E27FEA5B00087C491 /* HomePresenter.swift */; };
 		20679E6D27FAE805000AD17C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E6C27FAE805000AD17C /* AppDelegate.swift */; };
 		20679E6F27FAE805000AD17C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E6E27FAE805000AD17C /* SceneDelegate.swift */; };
 		20679E7127FAE805000AD17C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E7027FAE805000AD17C /* HomeViewController.swift */; };
@@ -40,6 +43,9 @@
 		2017587327FD9F420087C491 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		2017587427FD9F420087C491 /* Scenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scenes.swift; sourceTree = "<group>"; };
 		2017587527FD9F420087C491 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		2017587A27FEA28D0087C491 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		2017587C27FEA4F00087C491 /* HomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembly.swift; sourceTree = "<group>"; };
+		2017587E27FEA5B00087C491 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		20679E6927FAE805000AD17C /* MariMar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MariMar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20679E6C27FAE805000AD17C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20679E6E27FAE805000AD17C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +96,14 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		2017587927FEA2730087C491 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				2017587A27FEA28D0087C491 /* UIColor.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		20679E6027FAE804000AD17C = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +134,7 @@
 				20F2EEE027FD555B001FADB2 /* MainCoordinator.swift */,
 				20F2EECF27FD524D001FADB2 /* BusinessLogic */,
 				20679E8127FAE976000AD17C /* UI */,
+				2017587927FEA2730087C491 /* Utility */,
 				20679E8027FAE8FF000AD17C /* Resources */,
 				2017586C27FD9E3C0087C491 /* Generated */,
 				20679E7727FAE806000AD17C /* LaunchScreen.storyboard */,
@@ -140,6 +155,8 @@
 		20679E8127FAE976000AD17C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				20679E8427FAEB3D000AD17C /* Common */,
+				20679E8527FAEB7C000AD17C /* Abstract */,
 				20679E8227FAE9B1000AD17C /* Story */,
 			);
 			path = UI;
@@ -148,8 +165,6 @@
 		20679E8227FAE9B1000AD17C /* Story */ = {
 			isa = PBXGroup;
 			children = (
-				20679E8427FAEB3D000AD17C /* Common */,
-				20679E8527FAEB7C000AD17C /* Abstract */,
 				20679E8327FAEA18000AD17C /* Home */,
 			);
 			path = Story;
@@ -158,7 +173,9 @@
 		20679E8327FAEA18000AD17C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2017587C27FEA4F00087C491 /* HomeAssembly.swift */,
 				20F2EECD27FD51CE001FADB2 /* HomeCoordinator.swift */,
+				2017587E27FEA5B00087C491 /* HomePresenter.swift */,
 				20679E7027FAE805000AD17C /* HomeViewController.swift */,
 				20679E7227FAE805000AD17C /* Home.storyboard */,
 			);
@@ -370,14 +387,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2017587F27FEA5B00087C491 /* HomePresenter.swift in Sources */,
 				20679E8727FAEB9A000AD17C /* ViewContainer.swift in Sources */,
 				20F2EEE127FD555B001FADB2 /* MainCoordinator.swift in Sources */,
+				2017587D27FEA4F00087C491 /* HomeAssembly.swift in Sources */,
 				2017587627FD9F420087C491 /* Strings.swift in Sources */,
 				2017587727FD9F420087C491 /* Scenes.swift in Sources */,
 				20679E9327FAF6ED000AD17C /* PushButton.swift in Sources */,
 				20F2EEE427FD6DB7001FADB2 /* TabBarController.swift in Sources */,
 				20F2EECE27FD51CE001FADB2 /* HomeCoordinator.swift in Sources */,
 				20F2EEDF27FD5506001FADB2 /* AppAssembly.swift in Sources */,
+				2017587B27FEA28D0087C491 /* UIColor.swift in Sources */,
 				2017587827FD9F420087C491 /* Assets.swift in Sources */,
 				20679E7127FAE805000AD17C /* HomeViewController.swift in Sources */,
 				20679E6D27FAE805000AD17C /* AppDelegate.swift in Sources */,
@@ -536,7 +556,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2ZMNAJJ5D5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = App/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -551,7 +571,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.badteam.MariMar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.badteam.marimar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -569,7 +589,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2ZMNAJJ5D5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = App/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -584,7 +604,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.badteam.MariMar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.badteam.marimar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
