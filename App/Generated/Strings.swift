@@ -12,8 +12,8 @@ import Foundation
 internal enum L10n {
 
   internal enum Tab {
-    /// Cupon
-    internal static let cupon = L10n.tr("Localizable", "Tab.cupon")
+    /// Clock
+    internal static let clock = L10n.tr("Localizable", "Tab.clock")
     /// Home
     internal static let home = L10n.tr("Localizable", "Tab.home")
   }

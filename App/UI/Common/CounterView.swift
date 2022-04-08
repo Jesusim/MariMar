@@ -65,7 +65,8 @@ final class CounterView: UIView {
           radius: innerArcRadius,
           startAngle: outlineEndAngle,
           endAngle: startAngle,
-          clockwise: false)
+          clockwise: false
+        )
         outlinePath.close()
         outlinePath.lineWidth = 3
         UIColor.black.setStroke()

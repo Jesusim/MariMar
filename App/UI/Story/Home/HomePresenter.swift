@@ -5,8 +5,6 @@
 //  Created by Kolesnikov Dmitry on 07.04.2022.
 //
 
-import Foundation
-
 protocol HomeViewOutput {
     
 }

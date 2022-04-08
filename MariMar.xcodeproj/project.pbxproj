@@ -23,6 +23,12 @@
 		20679E8727FAEB9A000AD17C /* ViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E8627FAEB9A000AD17C /* ViewContainer.swift */; };
 		20679E8E27FAF319000AD17C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 20679E8D27FAF319000AD17C /* README.md */; };
 		20679E9327FAF6ED000AD17C /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E9227FAF6ED000AD17C /* PushButton.swift */; };
+		20B4315F27FEBFA500E080F0 /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B4315E27FEBFA500E080F0 /* ClockViewController.swift */; };
+		20B4316227FEBFD100E080F0 /* Clock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B4316127FEBFD100E080F0 /* Clock.storyboard */; };
+		20B4316427FEC00300E080F0 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B4316327FEC00300E080F0 /* ClockView.swift */; };
+		20B4316627FEC14900E080F0 /* ClockCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B4316527FEC14900E080F0 /* ClockCoordinator.swift */; };
+		20B4316827FEC16200E080F0 /* ClockAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B4316727FEC16200E080F0 /* ClockAssembly.swift */; };
+		20B4316A27FEEF9500E080F0 /* ClockPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B4316927FEEF9500E080F0 /* ClockPresenter.swift */; };
 		20F2EEC127FC68B0001FADB2 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2EEC027FC68B0001FADB2 /* CounterView.swift */; };
 		20F2EEC827FD4FAD001FADB2 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2EEC727FD4FAD001FADB2 /* Coordinator.swift */; };
 		20F2EECA27FD50D2001FADB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2EEC927FD50D2001FADB2 /* ViewController.swift */; };
@@ -57,6 +63,12 @@
 		20679E8627FAEB9A000AD17C /* ViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContainer.swift; sourceTree = "<group>"; };
 		20679E8D27FAF319000AD17C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		20679E9227FAF6ED000AD17C /* PushButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
+		20B4315E27FEBFA500E080F0 /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
+		20B4316127FEBFD100E080F0 /* Clock.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Clock.storyboard; sourceTree = "<group>"; };
+		20B4316327FEC00300E080F0 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		20B4316527FEC14900E080F0 /* ClockCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockCoordinator.swift; sourceTree = "<group>"; };
+		20B4316727FEC16200E080F0 /* ClockAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockAssembly.swift; sourceTree = "<group>"; };
+		20B4316927FEEF9500E080F0 /* ClockPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockPresenter.swift; sourceTree = "<group>"; };
 		20F2EEC027FC68B0001FADB2 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		20F2EEC727FD4FAD001FADB2 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		20F2EEC927FD50D2001FADB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -165,6 +177,7 @@
 		20679E8227FAE9B1000AD17C /* Story */ = {
 			isa = PBXGroup;
 			children = (
+				20B4316027FEBFAC00E080F0 /* Clock */,
 				20679E8327FAEA18000AD17C /* Home */,
 			);
 			path = Story;
@@ -187,6 +200,7 @@
 			children = (
 				20679E9227FAF6ED000AD17C /* PushButton.swift */,
 				20F2EEC027FC68B0001FADB2 /* CounterView.swift */,
+				20B4316327FEC00300E080F0 /* ClockView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -200,6 +214,18 @@
 				20F2EEE327FD6DB7001FADB2 /* TabBarController.swift */,
 			);
 			path = Abstract;
+			sourceTree = "<group>";
+		};
+		20B4316027FEBFAC00E080F0 /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				20B4316727FEC16200E080F0 /* ClockAssembly.swift */,
+				20B4316527FEC14900E080F0 /* ClockCoordinator.swift */,
+				20B4316927FEEF9500E080F0 /* ClockPresenter.swift */,
+				20B4315E27FEBFA500E080F0 /* ClockViewController.swift */,
+				20B4316127FEBFD100E080F0 /* Clock.storyboard */,
+			);
+			path = Clock;
 			sourceTree = "<group>";
 		};
 		20F2EECF27FD524D001FADB2 /* BusinessLogic */ = {
@@ -314,6 +340,7 @@
 				20679E7927FAE806000AD17C /* LaunchScreen.storyboard in Resources */,
 				20F2EEF027FD715D001FADB2 /* Localizable.strings in Resources */,
 				20F2EEEE27FD7119001FADB2 /* swiftgen.yml in Resources */,
+				20B4316227FEBFD100E080F0 /* Clock.storyboard in Resources */,
 				20679E7627FAE806000AD17C /* Assets.xcassets in Resources */,
 				20679E8E27FAF319000AD17C /* README.md in Resources */,
 				20679E7427FAE805000AD17C /* Home.storyboard in Resources */,
@@ -388,13 +415,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2017587F27FEA5B00087C491 /* HomePresenter.swift in Sources */,
+				20B4316A27FEEF9500E080F0 /* ClockPresenter.swift in Sources */,
 				20679E8727FAEB9A000AD17C /* ViewContainer.swift in Sources */,
 				20F2EEE127FD555B001FADB2 /* MainCoordinator.swift in Sources */,
 				2017587D27FEA4F00087C491 /* HomeAssembly.swift in Sources */,
 				2017587627FD9F420087C491 /* Strings.swift in Sources */,
+				20B4316427FEC00300E080F0 /* ClockView.swift in Sources */,
 				2017587727FD9F420087C491 /* Scenes.swift in Sources */,
 				20679E9327FAF6ED000AD17C /* PushButton.swift in Sources */,
+				20B4316827FEC16200E080F0 /* ClockAssembly.swift in Sources */,
 				20F2EEE427FD6DB7001FADB2 /* TabBarController.swift in Sources */,
+				20B4316627FEC14900E080F0 /* ClockCoordinator.swift in Sources */,
 				20F2EECE27FD51CE001FADB2 /* HomeCoordinator.swift in Sources */,
 				20F2EEDF27FD5506001FADB2 /* AppAssembly.swift in Sources */,
 				2017587B27FEA28D0087C491 /* UIColor.swift in Sources */,
@@ -402,6 +433,7 @@
 				20679E7127FAE805000AD17C /* HomeViewController.swift in Sources */,
 				20679E6D27FAE805000AD17C /* AppDelegate.swift in Sources */,
 				20679E6F27FAE805000AD17C /* SceneDelegate.swift in Sources */,
+				20B4315F27FEBFA500E080F0 /* ClockViewController.swift in Sources */,
 				20F2EEC127FC68B0001FADB2 /* CounterView.swift in Sources */,
 				20F2EECC27FD5139001FADB2 /* AppCoordinator.swift in Sources */,
 				20F2EECA27FD50D2001FADB2 /* ViewController.swift in Sources */,
