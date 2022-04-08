@@ -9,7 +9,7 @@ import UIKit
 
 let kSeconds = 60
 let kMinutes = 60
-let kHours = 12
+let kHours = 12 * 5
 
 @IBDesignable
 final class ClockView: UIView {
@@ -17,6 +17,8 @@ final class ClockView: UIView {
     @IBInspectable var counterSeconds: Int = 0
     @IBInspectable var counterMinutes: Int = 0
     @IBInspectable var counterHours: Int = 0
+    
+    @IBInspectable var isNeedCircle: Bool = false
 
     override func draw(_ rect: CGRect) {
         super.draw(rect)
@@ -27,27 +29,29 @@ final class ClockView: UIView {
         let startAngle: CGFloat = 11
         let endAngle: CGFloat = (3 * .pi) / 2
         
-        let circle = UIBezierPath(
-            arcCenter: center,
-            radius: radius,
-            startAngle: startAngle,
-            endAngle: endAngle,
-            clockwise: true
-        )
-        
-        UIColor.gray.setFill()
-        circle.fill()
-        
-        let circleOutLine = UIBezierPath(
-            arcCenter: center,
-            radius: radius,
-            startAngle: startAngle,
-            endAngle: endAngle,
-            clockwise: true
-        )
-        
-        UIColor.black.setFill()
-        circleOutLine.stroke()
+        if isNeedCircle {
+            let circle = UIBezierPath(
+                arcCenter: center,
+                radius: radius,
+                startAngle: startAngle,
+                endAngle: endAngle,
+                clockwise: true
+            )
+            
+            UIColor.gray.setFill()
+            circle.fill()
+            
+            let circleOutLine = UIBezierPath(
+                arcCenter: center,
+                radius: radius,
+                startAngle: startAngle,
+                endAngle: endAngle,
+                clockwise: true
+            )
+            
+            UIColor.black.setFill()
+            circleOutLine.stroke()
+        }
         
         // Hours
         let angleDifference: CGFloat = .pi * 2

@@ -17,9 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock-face" translatesAutoresizingMaskIntoConstraints="NO" id="rIb-ba-QvD">
+                                <rect key="frame" x="0.0" y="245" width="414" height="406"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rIb-ba-QvD" secondAttribute="height" multiplier="207:203" id="fcM-OO-Ane"/>
+                                </constraints>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C9S-Xi-KL7" customClass="ClockView" customModule="MariMar" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="258.5" width="414" height="379"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="30" y="286" width="354" height="324"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="C9S-Xi-KL7" secondAttribute="height" multiplier="414:379" id="fZO-Zx-OZq"/>
                                 </constraints>
@@ -28,9 +35,12 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="rIb-ba-QvD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="6YU-SH-ibw"/>
+                            <constraint firstItem="rIb-ba-QvD" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="KD7-nH-JDj"/>
                             <constraint firstItem="C9S-Xi-KL7" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Xa6-hZ-piO"/>
-                            <constraint firstItem="C9S-Xi-KL7" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="qZ2-YW-yaO"/>
-                            <constraint firstItem="C9S-Xi-KL7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="sZb-S2-G4d"/>
+                            <constraint firstItem="rIb-ba-QvD" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="iTw-nJ-iYY"/>
+                            <constraint firstItem="C9S-Xi-KL7" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="-30" id="qZ2-YW-yaO"/>
+                            <constraint firstItem="C9S-Xi-KL7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="sZb-S2-G4d"/>
                         </constraints>
                     </view>
                     <connections>
@@ -43,6 +53,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="clock-face" width="450" height="450"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
