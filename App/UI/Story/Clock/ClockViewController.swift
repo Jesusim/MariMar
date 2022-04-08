@@ -20,8 +20,8 @@ final class ClockViewController: ViewController, ClockViewInput {
         
         setUpClock()
         
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (_) in
-            self.clockView.counterSeconds += 1
+        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { (_) in
+            self.clockView.counterSeconds += 0.1
             self.clockView.setNeedsDisplay()
         })
     }
@@ -45,7 +45,7 @@ final class ClockViewController: ViewController, ClockViewInput {
             clockView.counterHours = hour * 5
         }
         clockView.counterMinutes = minutes
-        clockView.counterSeconds = seconds
+        clockView.counterSeconds = Double(seconds)
     }
 
 }

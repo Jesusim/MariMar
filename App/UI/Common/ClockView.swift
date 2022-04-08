@@ -14,7 +14,7 @@ let kHours = 12 * 5
 @IBDesignable
 final class ClockView: UIView {
     
-    @IBInspectable var counterSeconds: Int = 0
+    @IBInspectable var counterSeconds: Double = 0
     @IBInspectable var counterMinutes: Int = 0
     @IBInspectable var counterHours: Int = 0
     
@@ -138,7 +138,7 @@ final class ClockView: UIView {
     }
     
     func moveLines() {
-        if counterSeconds >= kSeconds {
+        if counterSeconds >= Double(kSeconds) {
             counterMinutes += 1
             counterSeconds = 0
         }
