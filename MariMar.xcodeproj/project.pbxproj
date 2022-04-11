@@ -14,6 +14,8 @@
 		2017587B27FEA28D0087C491 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017587A27FEA28D0087C491 /* UIColor.swift */; };
 		2017587D27FEA4F00087C491 /* HomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017587C27FEA4F00087C491 /* HomeAssembly.swift */; };
 		2017587F27FEA5B00087C491 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017587E27FEA5B00087C491 /* HomePresenter.swift */; };
+		201BC9C42804012C0009A88B /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BC9C32804012C0009A88B /* GraphView.swift */; };
+		201BC9C6280408EC0009A88B /* UIView + round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BC9C5280408EC0009A88B /* UIView + round.swift */; };
 		20679E6D27FAE805000AD17C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E6C27FAE805000AD17C /* AppDelegate.swift */; };
 		20679E6F27FAE805000AD17C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E6E27FAE805000AD17C /* SceneDelegate.swift */; };
 		20679E7127FAE805000AD17C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E7027FAE805000AD17C /* HomeViewController.swift */; };
@@ -52,6 +54,8 @@
 		2017587A27FEA28D0087C491 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		2017587C27FEA4F00087C491 /* HomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembly.swift; sourceTree = "<group>"; };
 		2017587E27FEA5B00087C491 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		201BC9C32804012C0009A88B /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		201BC9C5280408EC0009A88B /* UIView + round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + round.swift"; sourceTree = "<group>"; };
 		20679E6927FAE805000AD17C /* MariMar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MariMar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20679E6C27FAE805000AD17C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20679E6E27FAE805000AD17C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				2017587A27FEA28D0087C491 /* UIColor.swift */,
+				201BC9C5280408EC0009A88B /* UIView + round.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -201,6 +206,7 @@
 				20679E9227FAF6ED000AD17C /* PushButton.swift */,
 				20F2EEC027FC68B0001FADB2 /* CounterView.swift */,
 				20B4316327FEC00300E080F0 /* ClockView.swift */,
+				201BC9C32804012C0009A88B /* GraphView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -425,6 +431,7 @@
 				20679E9327FAF6ED000AD17C /* PushButton.swift in Sources */,
 				20B4316827FEC16200E080F0 /* ClockAssembly.swift in Sources */,
 				20F2EEE427FD6DB7001FADB2 /* TabBarController.swift in Sources */,
+				201BC9C6280408EC0009A88B /* UIView + round.swift in Sources */,
 				20B4316627FEC14900E080F0 /* ClockCoordinator.swift in Sources */,
 				20F2EECE27FD51CE001FADB2 /* HomeCoordinator.swift in Sources */,
 				20F2EEDF27FD5506001FADB2 /* AppAssembly.swift in Sources */,
@@ -434,6 +441,7 @@
 				20679E6D27FAE805000AD17C /* AppDelegate.swift in Sources */,
 				20679E6F27FAE805000AD17C /* SceneDelegate.swift in Sources */,
 				20B4315F27FEBFA500E080F0 /* ClockViewController.swift in Sources */,
+				201BC9C42804012C0009A88B /* GraphView.swift in Sources */,
 				20F2EEC127FC68B0001FADB2 /* CounterView.swift in Sources */,
 				20F2EECC27FD5139001FADB2 /* AppCoordinator.swift in Sources */,
 				20F2EECA27FD50D2001FADB2 /* ViewController.swift in Sources */,
