@@ -7,16 +7,16 @@
 
 import UIKit
 
-let kSeconds = 60
-let kMinutes = 60
-let kHours = 12 * 5
+let kSeconds: Double = 60
+let kMinutes: Double = 60
+let kHours: Double = 12 * 5
 
 @IBDesignable
 final class ClockView: UIView {
     
     @IBInspectable var counterSeconds: Double = 0
-    @IBInspectable var counterMinutes: Int = 0
-    @IBInspectable var counterHours: Int = 0
+    @IBInspectable var counterMinutes: Double = 0
+    @IBInspectable var counterHours: Double = 0
     
     @IBInspectable var isNeedCircle: Bool = false
 
@@ -142,9 +142,12 @@ final class ClockView: UIView {
             counterMinutes += 1
             counterSeconds = 0
         }
+       
+        if counterMinutes.truncatingRemainder(dividingBy: 12) == 0 {
+            counterHours += 1
+        }
         
         if counterMinutes >= kMinutes {
-            counterHours += 1
             counterMinutes = 0
         }
         
