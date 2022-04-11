@@ -142,8 +142,8 @@ final class ClockView: UIView {
             counterMinutes += 1
             counterSeconds = 0
         }
-       
-        if counterMinutes.truncatingRemainder(dividingBy: 12) == 0 {
+        
+        if counterMinutes.truncatingRemainder(dividingBy: 12) == 0, counterSeconds == 0 {
             counterHours += 1
         }
         
