@@ -39,7 +39,7 @@ final class ClockViewController: ViewController, ClockViewInput {
         let minutes = calendar.component(.minute, from: date)
         let seconds = calendar.component(.second, from: date)
         
-        let countMinutesAfterHour = Int(minutes / 12) + 1
+        let countMinutesAfterHour = Int(minutes / 12)
         
         if hour > 12 {
             clockView.counterHours = Double(((hour - 12) * 5) + countMinutesAfterHour)
