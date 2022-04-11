@@ -17,6 +17,7 @@ protocol MainCoordinating: NavigationCoordinating {
 enum MainCoordinatorChild: Int {
     case home
     case clock
+    case bomb
 }
 
 private var _sharedMainCoordinator: MainCoordinating!
@@ -53,6 +54,7 @@ final class MainCoordinator: NavigationCoordinator<UITabBarController>, MainCoor
         presentingVC.viewControllers = [
             tab(for: .home),
             tab(for: .clock),
+            tab(for: .bomb)
         ]
     }
 
@@ -62,6 +64,8 @@ final class MainCoordinator: NavigationCoordinator<UITabBarController>, MainCoor
             return homeTab()
         case .clock:
             return clockTab()
+        case .bomb:
+            return bombTab()
         }
     }
     
@@ -107,12 +111,27 @@ final class MainCoordinator: NavigationCoordinator<UITabBarController>, MainCoor
             image: Asset.home.image,
             selectedImage: Asset.home.image
         )
-        let homeCoordinator = resolver.resolve(
+        let clockCoordinator = resolver.resolve(
             ClockCoordinating.self,
             arguments: clockNavigationVC, self as MainCoordinating
         )!
-        openChild(homeCoordinator)
+        openChild(clockCoordinator)
         return clockNavigationVC
+    }
+    
+    private func bombTab() -> UINavigationController {
+        let bombNavigationVC = UINavigationController()
+        bombNavigationVC.tabBarItem = UITabBarItem(
+            title: L10n.Tab.bomb,
+            image: Asset.home.image,
+            selectedImage: Asset.home.image
+        )
+        let bombCoordinator = resolver.resolve(
+            BombCoordinating.self,
+            arguments: bombNavigationVC, self as MainCoordinating
+        )!
+        openChild(bombCoordinator)
+        return bombNavigationVC
     }
 }
 

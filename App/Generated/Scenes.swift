@@ -12,6 +12,11 @@ import UIKit
 
 // swiftlint:disable explicit_type_interface identifier_name line_length type_body_length type_name
 internal enum StoryboardScene {
+  internal enum Bomb: StoryboardType {
+    internal static let storyboardName = "Bomb"
+
+    internal static let initialScene = InitialSceneType<MariMar.BombViewController>(storyboard: Bomb.self)
+  }
   internal enum Clock: StoryboardType {
     internal static let storyboardName = "Clock"
 

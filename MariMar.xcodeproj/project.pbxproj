@@ -16,6 +16,11 @@
 		2017587F27FEA5B00087C491 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017587E27FEA5B00087C491 /* HomePresenter.swift */; };
 		201BC9C42804012C0009A88B /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BC9C32804012C0009A88B /* GraphView.swift */; };
 		201BC9C6280408EC0009A88B /* UIView + round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BC9C5280408EC0009A88B /* UIView + round.swift */; };
+		201BC9DA280425150009A88B /* BombCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BC9D5280425150009A88B /* BombCoordinator.swift */; };
+		201BC9DB280425150009A88B /* BombViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BC9D6280425150009A88B /* BombViewController.swift */; };
+		201BC9DC280425150009A88B /* BombPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BC9D7280425150009A88B /* BombPresenter.swift */; };
+		201BC9DD280425150009A88B /* BombAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BC9D8280425150009A88B /* BombAssembly.swift */; };
+		201BC9DE280425150009A88B /* Bomb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 201BC9D9280425150009A88B /* Bomb.storyboard */; };
 		20679E6D27FAE805000AD17C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E6C27FAE805000AD17C /* AppDelegate.swift */; };
 		20679E6F27FAE805000AD17C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E6E27FAE805000AD17C /* SceneDelegate.swift */; };
 		20679E7127FAE805000AD17C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E7027FAE805000AD17C /* HomeViewController.swift */; };
@@ -56,6 +61,11 @@
 		2017587E27FEA5B00087C491 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		201BC9C32804012C0009A88B /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		201BC9C5280408EC0009A88B /* UIView + round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + round.swift"; sourceTree = "<group>"; };
+		201BC9D5280425150009A88B /* BombCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BombCoordinator.swift; sourceTree = "<group>"; };
+		201BC9D6280425150009A88B /* BombViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BombViewController.swift; sourceTree = "<group>"; };
+		201BC9D7280425150009A88B /* BombPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BombPresenter.swift; sourceTree = "<group>"; };
+		201BC9D8280425150009A88B /* BombAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BombAssembly.swift; sourceTree = "<group>"; };
+		201BC9D9280425150009A88B /* Bomb.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Bomb.storyboard; sourceTree = "<group>"; };
 		20679E6927FAE805000AD17C /* MariMar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MariMar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20679E6C27FAE805000AD17C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20679E6E27FAE805000AD17C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +131,18 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		201BC9D4280425150009A88B /* Bomb */ = {
+			isa = PBXGroup;
+			children = (
+				201BC9D5280425150009A88B /* BombCoordinator.swift */,
+				201BC9D6280425150009A88B /* BombViewController.swift */,
+				201BC9D7280425150009A88B /* BombPresenter.swift */,
+				201BC9D8280425150009A88B /* BombAssembly.swift */,
+				201BC9D9280425150009A88B /* Bomb.storyboard */,
+			);
+			path = Bomb;
+			sourceTree = "<group>";
+		};
 		20679E6027FAE804000AD17C = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +204,7 @@
 		20679E8227FAE9B1000AD17C /* Story */ = {
 			isa = PBXGroup;
 			children = (
+				201BC9D4280425150009A88B /* Bomb */,
 				20B4316027FEBFAC00E080F0 /* Clock */,
 				20679E8327FAEA18000AD17C /* Home */,
 			);
@@ -349,6 +372,7 @@
 				20B4316227FEBFD100E080F0 /* Clock.storyboard in Resources */,
 				20679E7627FAE806000AD17C /* Assets.xcassets in Resources */,
 				20679E8E27FAF319000AD17C /* README.md in Resources */,
+				201BC9DE280425150009A88B /* Bomb.storyboard in Resources */,
 				20679E7427FAE805000AD17C /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +446,7 @@
 			files = (
 				2017587F27FEA5B00087C491 /* HomePresenter.swift in Sources */,
 				20B4316A27FEEF9500E080F0 /* ClockPresenter.swift in Sources */,
+				201BC9DC280425150009A88B /* BombPresenter.swift in Sources */,
 				20679E8727FAEB9A000AD17C /* ViewContainer.swift in Sources */,
 				20F2EEE127FD555B001FADB2 /* MainCoordinator.swift in Sources */,
 				2017587D27FEA4F00087C491 /* HomeAssembly.swift in Sources */,
@@ -432,12 +457,15 @@
 				20B4316827FEC16200E080F0 /* ClockAssembly.swift in Sources */,
 				20F2EEE427FD6DB7001FADB2 /* TabBarController.swift in Sources */,
 				201BC9C6280408EC0009A88B /* UIView + round.swift in Sources */,
+				201BC9DD280425150009A88B /* BombAssembly.swift in Sources */,
+				201BC9DB280425150009A88B /* BombViewController.swift in Sources */,
 				20B4316627FEC14900E080F0 /* ClockCoordinator.swift in Sources */,
 				20F2EECE27FD51CE001FADB2 /* HomeCoordinator.swift in Sources */,
 				20F2EEDF27FD5506001FADB2 /* AppAssembly.swift in Sources */,
 				2017587B27FEA28D0087C491 /* UIColor.swift in Sources */,
 				2017587827FD9F420087C491 /* Assets.swift in Sources */,
 				20679E7127FAE805000AD17C /* HomeViewController.swift in Sources */,
+				201BC9DA280425150009A88B /* BombCoordinator.swift in Sources */,
 				20679E6D27FAE805000AD17C /* AppDelegate.swift in Sources */,
 				20679E6F27FAE805000AD17C /* SceneDelegate.swift in Sources */,
 				20B4315F27FEBFA500E080F0 /* ClockViewController.swift in Sources */,

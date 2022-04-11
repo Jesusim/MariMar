@@ -12,6 +12,8 @@ import Foundation
 internal enum L10n {
 
   internal enum Tab {
+    /// Bomb
+    internal static let bomb = L10n.tr("Localizable", "Tab.bomb")
     /// Clock
     internal static let clock = L10n.tr("Localizable", "Tab.clock")
     /// Home
