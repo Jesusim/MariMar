@@ -21,6 +21,7 @@
 		201BC9DC280425150009A88B /* BombPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BC9D7280425150009A88B /* BombPresenter.swift */; };
 		201BC9DD280425150009A88B /* BombAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201BC9D8280425150009A88B /* BombAssembly.swift */; };
 		201BC9DE280425150009A88B /* Bomb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 201BC9D9280425150009A88B /* Bomb.storyboard */; };
+		2055B07A28055A0B00C636A2 /* BombView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055B07928055A0B00C636A2 /* BombView.swift */; };
 		20679E6D27FAE805000AD17C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E6C27FAE805000AD17C /* AppDelegate.swift */; };
 		20679E6F27FAE805000AD17C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E6E27FAE805000AD17C /* SceneDelegate.swift */; };
 		20679E7127FAE805000AD17C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20679E7027FAE805000AD17C /* HomeViewController.swift */; };
@@ -66,6 +67,7 @@
 		201BC9D7280425150009A88B /* BombPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BombPresenter.swift; sourceTree = "<group>"; };
 		201BC9D8280425150009A88B /* BombAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BombAssembly.swift; sourceTree = "<group>"; };
 		201BC9D9280425150009A88B /* Bomb.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Bomb.storyboard; sourceTree = "<group>"; };
+		2055B07928055A0B00C636A2 /* BombView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BombView.swift; sourceTree = "<group>"; };
 		20679E6927FAE805000AD17C /* MariMar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MariMar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20679E6C27FAE805000AD17C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20679E6E27FAE805000AD17C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,10 +136,10 @@
 		201BC9D4280425150009A88B /* Bomb */ = {
 			isa = PBXGroup;
 			children = (
-				201BC9D5280425150009A88B /* BombCoordinator.swift */,
-				201BC9D6280425150009A88B /* BombViewController.swift */,
-				201BC9D7280425150009A88B /* BombPresenter.swift */,
 				201BC9D8280425150009A88B /* BombAssembly.swift */,
+				201BC9D5280425150009A88B /* BombCoordinator.swift */,
+				201BC9D7280425150009A88B /* BombPresenter.swift */,
+				201BC9D6280425150009A88B /* BombViewController.swift */,
 				201BC9D9280425150009A88B /* Bomb.storyboard */,
 			);
 			path = Bomb;
@@ -230,6 +232,7 @@
 				20F2EEC027FC68B0001FADB2 /* CounterView.swift */,
 				20B4316327FEC00300E080F0 /* ClockView.swift */,
 				201BC9C32804012C0009A88B /* GraphView.swift */,
+				2055B07928055A0B00C636A2 /* BombView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 				20679E9327FAF6ED000AD17C /* PushButton.swift in Sources */,
 				20B4316827FEC16200E080F0 /* ClockAssembly.swift in Sources */,
 				20F2EEE427FD6DB7001FADB2 /* TabBarController.swift in Sources */,
+				2055B07A28055A0B00C636A2 /* BombView.swift in Sources */,
 				201BC9C6280408EC0009A88B /* UIView + round.swift in Sources */,
 				201BC9DD280425150009A88B /* BombAssembly.swift in Sources */,
 				201BC9DB280425150009A88B /* BombViewController.swift in Sources */,
