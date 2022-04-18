@@ -12,12 +12,13 @@ protocol BombViewInput {
 
 final class BombViewController: ViewController, BombViewInput {
     
+    @IBOutlet weak var containerView: UIView!
+    
     var viewOutput: BombViewOutput!
     
     var itemsAnimator: UIDynamicAnimator?
     var boundaryCollisionBehavior: UICollisionBehavior?
     var gravityBehavior: UIGravityBehavior?
-    @IBOutlet weak var containerView: UIView!
     
     var bombs: [UIView] = []
     
@@ -35,8 +36,9 @@ final class BombViewController: ViewController, BombViewInput {
       
         gravityBehavior?.addItem(bomb)
         boundaryCollisionBehavior?.addItem(bomb)
-       
+        
         itemsAnimator?.addBehavior(gravityBehavior!)
+        boundaryCollisionBehavior?.collisionDelegate = self
         itemsAnimator?.addBehavior(boundaryCollisionBehavior!)
     }
     
@@ -56,6 +58,35 @@ final class BombViewController: ViewController, BombViewInput {
         )
         containerView.addSubview(bomb)
         setupGravity(bomb: bomb)
+    }
+    
+}
+
+extension BombViewController: UICollisionBehaviorDelegate {
+    
+    func collisionBehavior(
+        _ behavior: UICollisionBehavior,
+        beganContactFor item1: UIDynamicItem,
+        with item2: UIDynamicItem,
+        at p: CGPoint
+    ) {
+        let bomb = item2 as? BombView
+        bomb?.start()
+    }
+    
+    func collisionBehavior(
+        _ behavior: UICollisionBehavior,
+        beganContactFor item: UIDynamicItem,
+        withBoundaryIdentifier identifier: NSCopying?,
+        at p: CGPoint
+    ) {
+        let bomb = item as? BombView
+        bomb?.start()
+        bomb?.onRemoveView = {
+            self.bombs.removeAll(where: { $0 == bomb })
+            self.gravityBehavior?.removeItem(item)
+            self.boundaryCollisionBehavior?.removeItem(item)
+        }
     }
     
 }
