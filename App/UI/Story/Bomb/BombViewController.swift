@@ -72,6 +72,11 @@ extension BombViewController: UICollisionBehaviorDelegate {
     ) {
         let bomb = item2 as? BombView
         bomb?.start()
+        bomb?.onRemoveView = {
+            self.bombs.removeAll(where: { $0 == bomb })
+            self.gravityBehavior?.removeItem(item2)
+            self.boundaryCollisionBehavior?.removeItem(item2)
+        }
     }
     
     func collisionBehavior(

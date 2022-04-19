@@ -28,6 +28,7 @@ final class BombView: UIView {
     }
     
     private func commonInit() {
+        setupRootLayer()
         layer.addSublayer(rootLayer)
         
         emitterLayer.emitterCells = [fireworkCell]
@@ -87,7 +88,6 @@ final class BombView: UIView {
     }
     
     func start() {
-        setupRootLayer()
         setupEmitterLayer()
         setupFireworkCell()
     }
